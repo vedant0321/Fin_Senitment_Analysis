@@ -4,8 +4,8 @@ import time
 from typing import List, Dict, Any, Optional
 
 class FinancialNewsClient:
-    def __init__(self, api_key="Your API Key"):
-        self.api_key = api_key or os.environ.get("Your API Key")
+    def __init__(self, api_key="cvrq7dpr01qnpem922o0cvrq7dpr01qnpem922og"):
+        self.api_key = api_key or os.environ.get("cvrq7dpr01qnpem922o0cvrq7dpr01qnpem922og")
         if not self.api_key:
             raise ValueError("Finnhub API key is required. Set it in the FINNHUB_API_KEY environment variable.")
         self.base_url = "https://finnhub.io/api/v1"
