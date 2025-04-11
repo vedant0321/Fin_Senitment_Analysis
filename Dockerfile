@@ -1,11 +1,23 @@
-FROM python:3.9-slim
+# Use the official Python image
+FROM python:3.11-slim
 
+# Set working directory
 WORKDIR /app
 
-COPY . /app
+# Copy dependencies
+COPY requirements.txt .
 
-# RUN pip install --no-cache-dir -r requirements.txt
+# Install Python dependencies
+RUN pip install --no-cache-dir -r requirements.txt
 
+# Copy all project files
+COPY . .
 
+# Expose FastAPI port 
+EXPOSE 8001
 
-CMD ["sleep", "infinity"]
+# Set environment variable
+ENV PYTHONUNBUFFERED=1
+
+# Run the app using Python directly
+CMD ["python", "app.py"]
