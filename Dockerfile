@@ -14,10 +14,11 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Expose FastAPI port 
-EXPOSE 8001
+EXPOSE 8000
 
 # Set environment variable
 ENV PYTHONUNBUFFERED=1
 
 # Run the app using Python directly
 CMD ["python", "app.py"]
+

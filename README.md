@@ -123,12 +123,14 @@ A `Dockerfile` is provided to containerize the application. To build and run the
 
 1. **Build the Docker Image:**
 ```bash
-docker build -t financial-sentiment-analysis .
+docker build -t financial-sentiment-analysis-v2 .
+
 ```
 
 2. **Run the Docker Container:**
 ```bash
-docker run -p 8000:8000 financial-sentiment-analysis
+docker run -d -p 8000:8000 financial-sentiment-analysis-v2
+
 ```
 
 ## Design Choices
