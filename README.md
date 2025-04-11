@@ -154,7 +154,7 @@ http://192.168.1.10:8000/docs
 
 ## License
 
-This project is licensed under the BSD 3-Clause License. See the [LICENSE](#license) file for details.
+This project is licensed under the BSD 3-Clause License. See the [LICENSE](https://github.com/vedant0321/Fin_Senitment_Analysis/blob/main/LICENSE.txt) file for details.
 
 ## System Configuration
 
