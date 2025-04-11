@@ -132,6 +132,17 @@ docker build -t financial-sentiment-analysis-v2 .
 docker run -d -p 8000:8000 financial-sentiment-analysis-v2
 
 ```
+**Note:**
+```txt
+- Once the Docker container is up and running, it will host the FastAPI application inside it. However, to access the FastAPI app from your local network, you need to:
+
+- Find your machine’s local IP address (for example: 192.168.1.10).
+
+- Identify the port exposed by the Docker container (commonly 8000 or a custom one you set using the -p flag).
+http://192.168.1.10:8000/docs
+
+```
+
 
 ## Design Choices
 
